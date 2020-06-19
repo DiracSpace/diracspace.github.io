@@ -1,0 +1,23 @@
+/*
+header design
+*/
+.jumbotron {
+    /*background-image: url("/img/blurrycodebackgroudn.jpeg");*/
+    background-color: lightgreen;
+    background-size: cover;
+    height: 60%;
+}
+
+.display-4 {
+    margin-top: 7%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.wrapper > div {
+    text-align: center;
+}
