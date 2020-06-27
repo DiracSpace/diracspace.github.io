@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DiracSpace</title>
+    <!-- google fonts & icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/4be3e68216.js" crossorigin="anonymous"></script>
     <!-- bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -15,33 +19,153 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 
-<body>
+<body class="blue-grey">
     <!-- header -->
-    <div class="jumbotron jumbotron-fluid">
+    <header>
+        <nav class="blue-grey">
+            <div class="nav-wrapper container">
+                <a href="#" class="brand-logo"></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Sobre mi</a></li>
+                    <li><a href="#">Proyectos</a></li>
+                    <li><a href="#">Conocimientos</a></li>
+                </ul>
+            </div>
+        </nav>
+        <ul class="sidenav" id="mobile-demo">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Sobre mi</a></li>
+            <li><a href="#">Proyectos</a></li>
+            <li><a href="#">Conocimientos</a></li>
+        </ul>
+        <div class="overlay">
+            <div class="overlay-text">
+                <h2>DiracSpace</h2>
+                <div class="row container">
+                    <div class="col s1"><a class="waves-effect waves-teal btn-flat tooltipped"
+                            href="https://github.com/DiracSpace" data-position="bottom"
+                            data-tooltip="¿Curiosidad en mi código?"><i class="fab fa-github"></i></a></div>
+                    <div class="col s1"><a class="waves-effect waves-teal btn-flat tooltipped"
+                            href="https://github.com/DiracSpace" data-position="bottom"
+                            data-tooltip="También manejo Azure"><i class="fab fa-windows"></i></a></div>
+                    <div class="col s1"><a class="waves-effect waves-teal btn-flat tooltipped"
+                            href="https://github.com/DiracSpace" data-position="bottom" data-tooltip="Mi día a día"><i
+                                class="fab fa-facebook"></i></a></div>
+                    <div class="col s1"><a class="waves-effect waves-teal btn-flat tooltipped"
+                            href="https://github.com/DiracSpace" data-position="bottom"
+                            data-tooltip="¿Más profesional? Claro"><i class="fab fa-linkedin"></i></a></div>
+                    <div class="col s1"><a class="waves-effect waves-teal btn-flat tooltipped"
+                            href="https://github.com/DiracSpace" data-position="bottom"
+                            data-tooltip="Mándame un correo"><i class="fab fa-google-plus"></i></a></div>
+                    <div class="col s1"><a class="waves-effect waves-teal btn-flat tooltipped"
+                            href="https://github.com/DiracSpace" data-position="bottom"
+                            data-tooltip="Tengo tutoriales"><i class="fab fa-youtube"></i></a></div>
+                    <div class="col s1"><a class="waves-effect waves-teal btn-flat tooltipped"
+                            href="https://github.com/DiracSpace" data-position="bottom" data-tooltip="¡Sígueme!"><i
+                                class="fab fa-instagram"></i></a></div>
+                    <div class="col s1"><a class="waves-effect waves-teal btn-flat tooltipped"
+                            href="https://github.com/DiracSpace" data-position="bottom"
+                            data-tooltip="También Twitter, como no"><i class="fab fa-twitter"></i></a></div>
+                    <div class="col s1"><a class="waves-effect waves-teal btn-flat tooltipped"
+                            href="https://github.com/DiracSpace" data-position="bottom" data-tooltip="¿Una plática?"><i
+                                class="fab fa-discord"></i></a></div>
+                    <div class="col s1"><a class="waves-effect waves-teal btn-flat tooltipped"
+                            href="https://github.com/DiracSpace" data-position="bottom"
+                            data-tooltip="Alomejor compartimos gustos"><i class="fab fa-spotify"></i></a></div>
+                    <div class="col s1"><a class="waves-effect waves-teal btn-flat tooltipped"
+                            href="https://github.com/DiracSpace" data-position="bottom"
+                            data-tooltip="Nunca hice stream"><i class="fab fa-twitch"></i></a></div>
+                    <div class="col s1"><a class="waves-effect waves-teal btn-flat tooltipped"
+                            href="https://github.com/DiracSpace" data-position="bottom"
+                            data-tooltip="Grupos de Linux"><i class="fab fa-reddit"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header -->
+    <!-- body -->
+    <section class="about">
         <div class="container">
-            <h1 class="display-4">Hola, soy Jayson</h1>
-            <p>Me gusta muchísimo la cíberseguridad y las pruebas de penetración en sistemas o redes.</p>
-            <p id="demo"></p>
-            <hr class="my-4">
+            <h2>Sobre mi</h2>
+            <p class="flow-text about-me">
+                Soy un programador, enfocado a áreas de testing y seguridad informática. Me encanta participar
+                en
+                ámbitos de equipo, soy apasionado en el área al que me quiero enfocar.
+                A continuación, una resumida explicación de mis habilidades sociales.
+            </p>
         </div>
-    </div>
-
-    <div class="wrapper">
-        <div class="tryhackme">
-            <script src="https://tryhackme.com/badge/41721"></script>
+        <div class="row columns">
+            <div class="col s4">
+                <div class="columnicon">
+                    <span class="material-icons md-64">
+                        done_all
+                    </span>
+                </div>
+                <div class="columnheader">
+                    <h4>
+                        Responsabilidad
+                    </h4>
+                </div>
+                <div class="container columntext">
+                    <p>
+                        Soy alguien que le gusta cumplir con todo el trabajo a tiempo. Cuando no estoy 
+                        al tanto de algo, me gusta preguntar. Me encanta ser curioso, quiero saber cómo
+                        funcionan todos los dispositivos o protocolos usados.
+                    </p>
+                </div>
+            </div>
+            <div class="col s4">
+                <div class="columnicon">
+                    <span class="material-icons md-64">
+                        code
+                    </span>
+                </div>
+                <div class="columnheader">
+                    <h4>
+                        Control del código
+                    </h4>
+                </div>
+                <div class="container columntext">
+                    <p>
+                        Me gusta mucho implementar código que se mire bonito, prefiero más una estructura entendible
+                        a usar una estructura no contenida. Trato de siempre usar mi propia lógica para implementar una
+                        caracterterística, pero nunca está de más implementar algo ya generado como una librería en Github.
+                    </p>
+                </div>
+            </div>
+            <div class="col s4">
+                <div class="columnicon">
+                    <span class="material-icons md-64">
+                        more_time
+                    </span>
+                </div>
+                <div class="columnheader">
+                    <h4>
+                        Disponibilidad
+                    </h4>
+                </div>
+                <div class="container columntext">
+                    <p>
+                        Trato siempre de mantenerme más tiempo del establecido para poder avanzarle a mis trabajos o pendientes.
+                        Soy alguien que prefiere invertir tiempo nulo, en donde no estoy haciendo algo, para poder hacer cosas que me gustan
+                        o que tengo por terminar.
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="hackthebox">
-            <script src="https://www.hackthebox.eu/badge/127839"></script>
-        </div>
-    </div>
+    </section>
+    <!-- body -->
     <!-- internal js -->
+    <script type="text/javascript">
+        // materialize init
+        document.addEventListener("DOMContentLoaded", (e) => {
+            M.AutoInit();
+        });
+    </script>
     <!-- external js -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 
 </html>

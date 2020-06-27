@@ -1,23 +1,83 @@
-/*
-header design
-*/
-.jumbotron {
-    /*background-image: url("/img/blurrycodebackgroudn.jpeg");*/
-    background-color: lightgreen;
-    background-size: cover;
-    height: 60%;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
 }
 
-.display-4 {
-    margin-top: 7%;
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-64 { font-size: 64px; }
+
+header {
+    position: relative;
+    /* add image here */
+    background-image: url("/img/codebackground2.png");
+    /* background-color: black; */
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
 }
 
-.wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+div.overlay {
+    position: absolute;
+    float: left;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 30;
 }
 
-.wrapper > div {
+div.overlay-text h2 {
+    color: white;
     text-align: center;
+    font-family: "Roboto",sans-serif;
+    font-size: 4.5rem;
+    padding-top: 3cm;
+    font-weight: 300;
+}
+
+div.overlay-text p {
+    color: white;
+    text-align: center;
+    font-family: "Roboto",sans-serif;
+    font-size: 1.25rem;
+}
+
+div.row a {
+    padding-top: 10%;
+    color: white;
+}
+
+div.social {
+    text-align: center;
+}
+
+div.container p {
+    font-size: medium;
+}
+
+section {
+    text-align: center;
+    display: block;
+    font-family: "Roboto",sans-serif;
+    font-size: 1.25rem;
+    color: white;
+}
+
+div.columns {
+    padding-top: 5%;
+}
+
+div.columnheader {
+    padding-top: 10%;
+}
+
+div.columntext {
+    padding-top: 5%;
+    font-size: small;
 }
