@@ -17,12 +17,37 @@
         crossorigin="anonymous"></script>
     <!-- css -->
     <link rel="stylesheet" href="css/index.css">
+    <style type="text/css">
+        div.columns {
+            padding-top: 5%;
+        }
+
+        div.columnheader {
+            padding-top: 10%;
+        }
+
+        div.columntext {
+            padding-top: 5%;
+            font-size: small;
+        }
+
+        div.row a {
+            padding-top: 10%;
+            color: white;
+        }
+
+        div.container p {
+            text-align: justify;
+            font-size: medium;
+            padding-bottom: 5%;
+        }
+    </style>
 </head>
 
 <body class="blue-grey">
     <!-- header -->
     <header>
-        <nav class="blue-grey">
+        <nav class="transparent">
             <div class="nav-wrapper container">
                 <a href="#" class="brand-logo"></a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -35,15 +60,56 @@
             </div>
         </nav>
         <ul class="sidenav" id="mobile-demo">
+            <li>
+                <div class="user-view">
+                    <div class="background">
+                        <img src="/img/codebackground.png">
+                    </div>
+                    <a class="profile-pic-sidenav" href="#"><img class="circle" src="/img/defaultuser.png"></a>
+                    <a href="#"><span class="white-text name">Jayson Roberto De León Martínez</span></a>
+                </div>
+            </li>
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#">Sobre mi</a></li>
             <li><a href="#">Proyectos</a></li>
             <li><a href="#">Conocimientos</a></li>
+            <li class="socials-sidenav">
+                <div class=" divider">
+                </div>
+            </li>
+            <li class="socials-sidenav"><a class="subheader">Social links</a></li>
+            <li class="socials-sidenav"><a class="waves-effect waves-teal btn-flat"
+                    href="https://github.com/DiracSpace"><i class="fab fa-github"></i>Github</a></li>
+            <li class="socials-sidenav"><a class="waves-effect waves-teal btn-flat" href="#"><i
+                        class="fab fa-windows"></i>Azure DevOps</a></li>
+            <li class="socials-sidenav"><a class="waves-effect waves-teal btn-flat"
+                    href="https://www.facebook.com/roberto.deleon.357/"><i class="fab fa-facebook"></i>Facebook</a></li>
+            <li class="socials-sidenav"><a class="waves-effect waves-teal btn-flat"
+                    href="https://www.linkedin.com/in/roberto-de-le%C3%B3n-4aab1117a/"><i
+                        class="fab fa-linkedin"></i>Linkedin</a></li>
+            <li class="socials-sidenav"><a class="waves-effect waves-teal btn-flat modal-trigger" href="#email"><i
+                        class="fab fa-google"></i>Correo</a></li>
+            <li class="socials-sidenav"><a class="waves-effect waves-teal btn-flat"
+                    href="https://www.youtube.com/channel/UC9fvGaIgIJ92w33ns1cuDPw"><i
+                        class="fab fa-youtube"></i>YouTube</a></li>
+            <li class="socials-sidenav"><a class="waves-effect waves-teal btn-flat"
+                    href="https://www.instagram.com/diracspace/"><i class="fab fa-instagram"></i>Instagram</a></li>
+            <li class="socials-sidenav"><a class="waves-effect waves-teal btn-flat"
+                    href="https://twitter.com/DiracSpace"><i class="fab fa-twitter"></i>Twitter</a></li>
+            <li class="socials-sidenav"><a class="waves-effect waves-teal btn-flat" href="https://discord.gg/DYqgARr"><i
+                        class="fab fa-discord"></i>Discord</a></li>
+            <li class="socials-sidenav"><a class="waves-effect waves-teal btn-flat"
+                    href="https://open.spotify.com/user/mxjrdmmx?si=qyMsFG65RvSvDZCupOO9dQ"><i
+                        class="fab fa-spotify"></i>Spotify</a></li>
+            <li class="socials-sidenav"><a class="waves-effect waves-teal btn-flat"
+                    href="https://www.twitch.tv/d1racspac3"><i class="fab fa-twitch"></i>Twitch</a></li>
+            <li class="socials-sidenav"><a class="waves-effect waves-teal btn-flat"
+                    href="https://www.reddit.com/user/DiracSpace"><i class="fab fa-reddit"></i>Reddit</a></li>
         </ul>
         <div class="overlay">
             <div class="overlay-text">
                 <h2>DiracSpace</h2>
-                <div class="row container">
+                <div class="row container socialheader">
                     <div class="col s1"><a class="waves-effect waves-teal btn-flat tooltipped"
                             href="https://github.com/DiracSpace" data-position="bottom"
                             data-tooltip="¿Curiosidad en mi código?"><i class="fab fa-github"></i></a></div>
@@ -51,121 +117,120 @@
                             href="https://github.com/DiracSpace" data-position="bottom"
                             data-tooltip="También manejo Azure"><i class="fab fa-windows"></i></a></div>
                     <div class="col s1"><a class="waves-effect waves-teal btn-flat tooltipped"
-                            href="https://github.com/DiracSpace" data-position="bottom" data-tooltip="Mi día a día"><i
-                                class="fab fa-facebook"></i></a></div>
+                            href="https://www.facebook.com/roberto.deleon.357/" data-position="bottom"
+                            data-tooltip="Mi día a día"><i class="fab fa-facebook"></i></a></div>
                     <div class="col s1"><a class="waves-effect waves-teal btn-flat tooltipped"
                             href="https://github.com/DiracSpace" data-position="bottom"
                             data-tooltip="¿Más profesional? Claro"><i class="fab fa-linkedin"></i></a></div>
+                    <div class="col s1"><a class="waves-effect waves-teal btn-flat tooltipped modal-trigger"
+                            href="#email" data-position="bottom" data-tooltip="Mándame un correo"><i
+                                class="fab fa-google"></i></a>
+                    </div>
                     <div class="col s1"><a class="waves-effect waves-teal btn-flat tooltipped"
-                            href="https://github.com/DiracSpace" data-position="bottom"
-                            data-tooltip="Mándame un correo"><i class="fab fa-google-plus"></i></a></div>
+                            href="https://www.youtube.com/channel/UC9fvGaIgIJ92w33ns1cuDPw" data-position="bottom"
+                            data-tooltip="Tengo tutoriales"><i class="fab fa-youtube"></i></a>
+                    </div>
                     <div class="col s1"><a class="waves-effect waves-teal btn-flat tooltipped"
-                            href="https://github.com/DiracSpace" data-position="bottom"
-                            data-tooltip="Tengo tutoriales"><i class="fab fa-youtube"></i></a></div>
+                            href="https://www.instagram.com/diracspace/" data-position="bottom"
+                            data-tooltip="¡Sígueme!"><i class="fab fa-instagram"></i></a></div>
                     <div class="col s1"><a class="waves-effect waves-teal btn-flat tooltipped"
-                            href="https://github.com/DiracSpace" data-position="bottom" data-tooltip="¡Sígueme!"><i
-                                class="fab fa-instagram"></i></a></div>
-                    <div class="col s1"><a class="waves-effect waves-teal btn-flat tooltipped"
-                            href="https://github.com/DiracSpace" data-position="bottom"
+                            href="https://twitter.com/DiracSpace" data-position="bottom"
                             data-tooltip="También Twitter, como no"><i class="fab fa-twitter"></i></a></div>
                     <div class="col s1"><a class="waves-effect waves-teal btn-flat tooltipped"
-                            href="https://github.com/DiracSpace" data-position="bottom" data-tooltip="¿Una plática?"><i
+                            href="https://discord.gg/DYqgARr" data-position="bottom" data-tooltip="¿Una plática?"><i
                                 class="fab fa-discord"></i></a></div>
                     <div class="col s1"><a class="waves-effect waves-teal btn-flat tooltipped"
-                            href="https://github.com/DiracSpace" data-position="bottom"
-                            data-tooltip="Alomejor compartimos gustos"><i class="fab fa-spotify"></i></a></div>
+                            href="https://open.spotify.com/user/mxjrdmmx?si=qyMsFG65RvSvDZCupOO9dQ"
+                            data-position="bottom" data-tooltip="Alomejor compartimos gustos"><i
+                                class="fab fa-spotify"></i></a></div>
                     <div class="col s1"><a class="waves-effect waves-teal btn-flat tooltipped"
-                            href="https://github.com/DiracSpace" data-position="bottom"
+                            href="https://www.twitch.tv/d1racspac3" data-position="bottom"
                             data-tooltip="Nunca hice stream"><i class="fab fa-twitch"></i></a></div>
                     <div class="col s1"><a class="waves-effect waves-teal btn-flat tooltipped"
-                            href="https://github.com/DiracSpace" data-position="bottom"
-                            data-tooltip="Grupos de Linux"><i class="fab fa-reddit"></i></a></div>
+                            href="https://www.reddit.com/user/DiracSpace" data-position="bottom" data-tooltip="Linux"><i
+                                class="fab fa-reddit"></i></a></div>
                 </div>
             </div>
         </div>
     </header>
     <!-- header -->
     <!-- body -->
-    <section class="about">
+    <section class="about"></section>
+    <section class="projects"></section>
+    <section class="knowledge">
         <div class="container">
             <h2>Sobre mi</h2>
             <p class="flow-text about-me">
                 Soy un programador, enfocado a áreas de testing y seguridad informática. Me encanta participar
                 en
                 ámbitos de equipo, soy apasionado en el área al que me quiero enfocar.
-                A continuación, una resumida explicación de mis habilidades sociales.
+                A continuación, algunos certificados que he obtenido.
             </p>
         </div>
-        <div class="row columns">
-            <div class="col s4">
-                <div class="columnicon">
-                    <span class="material-icons md-64">
-                        done_all
-                    </span>
-                </div>
-                <div class="columnheader">
-                    <h4>
-                        Responsabilidad
-                    </h4>
-                </div>
-                <div class="container columntext">
-                    <p>
-                        Soy alguien que le gusta cumplir con todo el trabajo a tiempo. Cuando no estoy 
-                        al tanto de algo, me gusta preguntar. Me encanta ser curioso, quiero saber cómo
-                        funcionan todos los dispositivos o protocolos usados.
-                    </p>
-                </div>
-            </div>
-            <div class="col s4">
-                <div class="columnicon">
-                    <span class="material-icons md-64">
-                        code
-                    </span>
-                </div>
-                <div class="columnheader">
-                    <h4>
-                        Control del código
-                    </h4>
-                </div>
-                <div class="container columntext">
-                    <p>
-                        Me gusta mucho implementar código que se mire bonito, prefiero más una estructura entendible
-                        a usar una estructura no contenida. Trato de siempre usar mi propia lógica para implementar una
-                        caracterterística, pero nunca está de más implementar algo ya generado como una librería en Github.
-                    </p>
-                </div>
-            </div>
-            <div class="col s4">
-                <div class="columnicon">
-                    <span class="material-icons md-64">
-                        more_time
-                    </span>
-                </div>
-                <div class="columnheader">
-                    <h4>
-                        Disponibilidad
-                    </h4>
-                </div>
-                <div class="container columntext">
-                    <p>
-                        Trato siempre de mantenerme más tiempo del establecido para poder avanzarle a mis trabajos o pendientes.
-                        Soy alguien que prefiere invertir tiempo nulo, en donde no estoy haciendo algo, para poder hacer cosas que me gustan
-                        o que tengo por terminar.
-                    </p>
-                </div>
+        <div class="container certificates">
+            <div class="carousel carousel-slider">
+                <a class="carousel-item" href="#one!"><img src="img/LinuxCommandlineMadeEasy.jpg"></a>
+                <a class="carousel-item" href="#two!"><img src="img/HackingCorportativoEspañol.jpg"></a>
+                <a class="carousel-item" href="#three!"><img src="img/EthicalHackingCourseHindu.jpg"></a>
+                <a class="carousel-item" href="#four!"><img src="img/EthicalHackingCourseHindu2.jpg"></a>
             </div>
         </div>
     </section>
+
+    </section>
     <!-- body -->
+    <!-- modals -->
+    <div id="email" class="modal">
+        <div class="modal-content">
+            <div class="container modal-text">
+                <h4>Mándame un correo</h4>
+                <p>
+                    Ingresa los siguientes datos para poder mandarme un correo electrónico automáticamente. Si no quiere
+                    eso,
+                    a continuación estará mi correo.
+                </p>
+            </div>
+            <form id="email-form">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email-from" type="email" class="validate" required />
+                        <label for="email-from">Email</label>
+                        <span class="helper-text" data-error="wrong" data-success="right"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email-subject" type="text" class="validate" required />
+                        <label for="email-subject">Nombre</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="email-body" class="materialize-textarea" data-length="50"></textarea>
+                        <label for="email-body">Información</label>
+                    </div>
+                </div>
+                <button class="btn reen lighten-2 z-depth-0">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <!-- modals -->
     <!-- internal js -->
     <script type="text/javascript">
         // materialize init
         document.addEventListener("DOMContentLoaded", (e) => {
             M.AutoInit();
+            var instance = M.Carousel.init({
+                fullWidth: true,
+                indicators: true
+            });
         });
     </script>
+    <script type="text/javascript" src="js/base.js"></script>
     <!-- external js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 
 </html>
