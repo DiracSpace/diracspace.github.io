@@ -10,11 +10,29 @@
 .material-icons.md-48 { font-size: 48px; }
 .material-icons.md-64 { font-size: 64px; }
 
+@media screen and (max-width: 700px) {
+    div.socialheader { 
+        display: none;
+    }
+
+    div.certificates {
+        height: 307.833px !important;
+    }
+}
+
+@media screen and (min-width: 699px) {
+    li.socials-sidenav {
+        display: none;
+    }
+    
+    div.certificates {
+        height: 307.833px !important;
+    }
+}
+
 header {
     position: relative;
-    /* add image here */
     background-image: url("/img/codebackground2.png");
-    /* background-color: black; */
     height: 75vh;
     min-height: 25rem;
     width: 100%;
@@ -48,36 +66,10 @@ div.overlay-text p {
     font-size: 1.25rem;
 }
 
-div.row a {
-    padding-top: 10%;
-    color: white;
-}
-
-div.social {
-    text-align: center;
-}
-
-div.container p {
-    font-size: medium;
-}
-
 section {
     text-align: center;
     display: block;
     font-family: "Roboto",sans-serif;
     font-size: 1.25rem;
     color: white;
-}
-
-div.columns {
-    padding-top: 5%;
-}
-
-div.columnheader {
-    padding-top: 10%;
-}
-
-div.columntext {
-    padding-top: 5%;
-    font-size: small;
 }
