@@ -14,19 +14,11 @@
     div.socialheader { 
         display: none;
     }
-
-    div.certificates {
-        height: 307.833px !important;
-    }
 }
 
 @media screen and (min-width: 699px) {
     li.socials-sidenav {
         display: none;
-    }
-    
-    div.certificates {
-        height: 307.833px !important;
     }
 }
 
