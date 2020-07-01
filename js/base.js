@@ -1,11 +1,13 @@
+// email functionality
 const emailForm = document.querySelector('#email-form');
 const modal = document.querySelector('#email');
 const personal = '6861636b363332343340676d61696c2e636f6d'
+const token = '61626331623032322d366361642d343030332d623731642d363437666665323037643233'
 
 emailForm.addEventListener('submit', (e) => {
     e.preventDefault();
     Email.send({
-        SecureToken: "abc1b022-6cad-4003-b71d-647ffe207d23",
+        SecureToken: translate(token),
         To: translate(personal),
         From: emailForm['email-from'].value,
         Subject: emailForm['email-subject'].value,
@@ -25,3 +27,40 @@ function translate(input) {
     }
     return output;
 }
+
+// navigation events
+document.getElementById("floating-btn").addEventListener("click", (e) => {
+    $('.start-of-page').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});
+});
+
+document.getElementById("me-nav").addEventListener("click", (e) => {
+    $('.about').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});
+});
+
+document.getElementById("me-sidenav").addEventListener("click", (e) => {
+    $('.about').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});
+});
+
+document.getElementById("languages-nav").addEventListener("click", (e) => {
+    $('.languages').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});
+});
+
+document.getElementById("languages-sidenav").addEventListener("click", (e) => {
+    $('.languages').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});
+});
+
+document.getElementById("projects-nav").addEventListener("click", (e) => {
+    $('.projects').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});
+});
+
+document.getElementById("projects-sidenav").addEventListener("click", (e) => {
+    $('.projects').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});
+});
+
+document.getElementById("certificates-nav").addEventListener("click", (e) => {
+    $('.certificates').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});
+});
+
+document.getElementById("certificates-sidenav").addEventListener("click", (e) => {
+    $('.certificates').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});
+});
