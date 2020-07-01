@@ -2,10 +2,6 @@ const emailForm = document.querySelector('#email-form');
 const modal = document.querySelector('#email');
 const personal = '6861636b363332343340676d61696c2e636f6d'
 
-document.addEventListener("DOMContentLoaded", (e) => {
-    adjustCertificateCarousel()
-});
-
 emailForm.addEventListener('submit', (e) => {
     e.preventDefault();
     Email.send({
@@ -28,18 +24,4 @@ function translate(input) {
         output += String.fromCharCode(parseInt(stringinput.substr(n, 2), 16));
     }
     return output;
-}
-
-function adjustCertificateCarousel() {
-    var windowWidth = window.screen.width;
-    var windowHeight = window.screen.height;
-    console.log("Width: " + windowWidth + ", height: " + windowHeight);
-    if (windowWidth >= 600) {
-        console.log("adjusting width")
-        document.getElementById("certificate-display").style.height = '500px';
-    }
-    if (windowHeight >= 1000) {
-        console.log("adjusting height")
-        document.getElementById("certificate-display").style.height = '800px';
-    }
 }
