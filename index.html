@@ -41,6 +41,10 @@
             padding-bottom: 5%;
         }
 
+        #certificate-display {
+            padding-top: 10%;
+        }
+
         .slider-img {
             opacity: 0.2;
         }
@@ -48,13 +52,22 @@
 </head>
 
 <body class="blue-grey">
-    <!-- floating action button -->
+    <!-- test -->
     <div id="floating-btn" class="fixed-action-btn">
-        <a class="btn-floating btn-large waves-effect waves-light blue-grey darken-4 z-depth-5">
+        <a id="menu" class="btn-floating btn-large waves-effect waves-light blue-grey darken-4 z-depth-5 pulse">
             <i class="large material-icons">arrow_upward</i>
         </a>
     </div>
-    <!-- floating action button -->
+    <div class="tap-target blue-grey darken-4 z-depth-5" data-target="menu">
+        <div class="tap-target-content">
+            <h5 class="white-text">¡Hola!</h5>
+            <p class="white-text">
+                Puedes usar este botón para regresar al inicio de la página en cualquier momento.
+                También los botones de arriba te permiten moverte a lo largo de la página.
+            </p>
+        </div>
+    </div>
+    <!-- test -->
     <!-- header -->
     <header>
         <nav class="transparent start-of-page">
@@ -76,8 +89,7 @@
                     <div class="background">
                         <img src="/img/codebackground.png">
                     </div>
-                    <a class="profile-pic-sidenav center-align" href="#"><img class="circle"
-                            src="/img/defaultuser.png"></a>
+                    <a class="profile-pic-sidenav center-align" href="#"><img class="circle" src="img/foto cv.png"></a>
                     <a href="#"><span class="white-text name">Jayson Roberto De León Martínez</span></a>
                 </div>
             </li>
@@ -184,7 +196,7 @@
                 <div class="col s12 m12 l12">
                     <div class="card blue-grey darken-4 z-depth-4">
                         <div class="card-content white-text">
-                            <span class="card-title">Páginas de Hacking</span>
+                            <span class="card-title">Hacking Ético</span>
                             <script src="https://tryhackme.com/badge/41721"></script>
                             <p class="flow-text">
                                 He participado mucho en páginas como <a href="https://www.tryhackme.com/">TryHackMe</a>
@@ -378,14 +390,15 @@
             <h2>
                 Certificados
             </h2>
-            <p class="flow-text about-me">
-                Algunos reconocimientos que he obtenido por interés propio acerca de áreas que me apasionan
-            </p>
-            <div class="carousel carousel-slider" style="height: 100%;">
-                <a class="carousel-item" href="#one!"><img src="img/LinuxCommandlineMadeEasy.jpg"></a>
-                <a class="carousel-item" href="#two!"><img src="img/HackingCorportativoEspañol.jpg"></a>
-                <a class="carousel-item" href="#three!"><img src="img/EthicalHackingCourseHindu.jpg"></a>
-                <a class="carousel-item" href="#four!"><img src="img/EthicalHackingCourseHindu2.jpg"></a>
+            <div id="certificate-display" class="carousel carousel-slider" style="width: 100%;">
+                <a class="carousel-item" href="#one!"><img
+                        src="img/LinuxCommandlineMadeEasy.jpg"></a>
+                <a class="carousel-item" href="#two!"><img
+                        src="img/HackingCorportativoEspañol.jpg"></a>
+                <a class="carousel-item" href="#three!"><img
+                        src="img/EthicalHackingCourseHindu.jpg"></a>
+                <a class="carousel-item" href="#four!"><img
+                        src="img/EthicalHackingCourseHindu2.jpg"></a>
             </div>
         </div>
     </section>
@@ -481,9 +494,14 @@
     <script type="text/javascript">
         // materialize init
         document.addEventListener("DOMContentLoaded", (e) => {
+            // all functions activated
             M.AutoInit();
-            var elems = document.querySelectorAll('.slider');
-            var instances = M.Slider.init(elems);
+            var elemsTap = document.querySelector('.tap-target');
+            var instancesTap = M.TapTarget.init(elemsTap, {});
+            instancesTap.open()
+
+            var elemsSlider = document.querySelectorAll('.slider');
+            var instancesSlider = M.Slider.init(elemsSlider);
         });
     </script>
     <!-- external js -->

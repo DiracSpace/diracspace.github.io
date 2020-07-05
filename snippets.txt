@@ -7,3 +7,31 @@ certificate code
                 <a class="carousel-item" href="#four!"><img src="img/EthicalHackingCourseHindu2.jpg"></a>
             </div>
         </div>
+
+
+<!-- floating action button -->
+    <div id="floating-btn" class="fixed-action-btn">
+        <a class="btn-floating btn-large waves-effect waves-light blue-grey darken-4 z-depth-5 pulse">
+            <i class="large material-icons">arrow_upward</i>
+        </a>
+    </div>
+    <!-- floating action button -->
+    <!-- featureDiscovery -->
+    <div class="tap-target" data-target="floating-btn">
+        <div class="tap-target-content">
+            <h5>Title</h5>
+            <p>A bunch of text</p>
+        </div>
+    </div>
+    <!-- featureDiscovery -->
+
+    document.addEventListener("DOMContentLoaded", (e) => {
+    var windowWidth = window.screen.width;
+    var windowHeight = window.screen.height;
+
+    console.log("Width: " + windowWidth + ", height: " + windowHeight);
+    if (windowWidth >= 600) {
+        document.getElementById("certificate-display").style.width = '100%';
+        document.getElementById("certificate-display").style.height = '75%';
+    }
+});
