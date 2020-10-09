@@ -1,0 +1,18 @@
+div.column-container {
+    padding-right: 2%;
+    padding-left: 2%;
+    display: flex;
+}
+
+div.column {
+    flex: 1;
+
+    /* just to see them */
+    border: 2px solid black;
+    background-color: gray;
+    box-sizing: border-box;
+}
+
+div.column-one { order: 3; }
+div.column-two { order: 1; }
+div.column-three { order: 4; }
