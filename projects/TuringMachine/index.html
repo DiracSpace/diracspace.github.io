@@ -1,0 +1,73 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turing Machine</title>
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/line.css">
+    <style type="text/css">
+        #tape {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parallax-container">
+        <div class="parallax"><img src="img/background.jpg"></div>
+    </div>
+    <div class="section grey lighten-3">
+        <div class="row container">
+            <div class="container">
+                <ol class="turing"></ol>
+            </div>
+            <div class="row">
+                <div class="col s12 m6 l3">
+                    <h5>Acciones</h5>
+                    <div class="section">
+                        <input id="run" type="button" value="Correr" />
+                    </div>
+                    <div class="divider"></div>
+                    <div class="section">
+                        <input id="step" type="button" value="Siguiente paso" />
+                    </div>
+                    <div class="divider"></div>
+                    <div class="section">
+                        <input id="reset" type="button" value="Reiniciar" />
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <h5>Estado</h5>
+                    <p id="state"></p>
+                </div>
+                <div class="col s12 m6 l3">
+                    <h5>Conteo</h5>
+                    <p id="count"></p>
+                </div>
+                <div class="col s12 m6 l3">
+                    <h5>Operación</h5>
+                    <p id="calc"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="parallax-container">
+        <div class="parallax"><img src="img/background2.jpg"></div>
+    </div>
+
+    <!-- materialize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', (e) => {
+            M.AutoInit();
+        });
+    </script>
+    <!-- jquery -->
+    <script src="js/jquery.js"></script>
+    <script src="js/turing.js"></script>
+    <script src="js/base.js"></script>
+</body>
+
+</html>
