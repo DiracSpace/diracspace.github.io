@@ -10,3 +10,5 @@ body { background-color:#4f738b; }
 }
 
 div.card-panel { cursor: pointer; }
+
+#primersemestre { display: none; }
