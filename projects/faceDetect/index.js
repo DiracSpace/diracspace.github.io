@@ -38,3 +38,14 @@ video.addEventListener('play', () => {
 })
 
 AI()
+
+/*
+face-api.js:552 Uncaught (in promise) Error: Box.constructor - expected box to be IBoundingBox | IRect, instead have {"left":0.15384615384615385,"top":null,"right":0.15384615384615385,"bottom":null}
+    at BoundingBox.Box (face-api.js:552)
+    at new BoundingBox (face-api.js:742)
+    at TinyFaceDetector.<anonymous> (face-api.js:4748)
+    at step (face-api.js:402)
+    at Object.next (face-api.js:383)
+    at fulfilled (face-api.js:373)
+
+*/
