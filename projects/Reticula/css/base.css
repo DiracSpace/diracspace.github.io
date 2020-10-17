@@ -1,14 +1,44 @@
+/* general document changes */
 * {
     margin: 0;
     padding: 0;
 }
 
-body { background-color:#4f738b; }
+body { background-color: #337ab7; }
 
-@media screen and (min-width: 800px) {
-    div.container { padding-top: 10%; }
+/* tiny screens */
+@media screen and (max-width: 800px) {
+    h4.title {
+        font-size: 9vw !important;
+    }
+
+    h5 {
+        font-size: 4vw !important;
+    }
+}
+
+/* normal large screens and tablets */
+nav { background-color: #005a87 !important; }
+
+nav .brand-logo {
+    background-color: white;
+    height: 64px;
 }
 
 div.card-panel { cursor: pointer; }
 
-#primersemestre { display: none; }
+h4.title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: 3.5vw;
+}
+
+#materiasprimero { display: none; }
+#materiassegundo { display: none; }
+#materiastercero { display: none; }
+#materiascuarto { display: none; }
+#materiasquinto { display: none; }
+#materiassexto { display: none; }
+#materiasseptimo { display: none; }
+#materiasoctavo { display: none; }
+#materiasnoveno { display: none; }

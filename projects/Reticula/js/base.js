@@ -1,40 +1,52 @@
 // initializing materialize objects
 document.addEventListener("DOMContentLoaded", function() { M.AutoInit(); });
 
+// home function
+document.getElementById('Home').addEventListener("click", function() { window.location.href = "./index.html"; });
+
 /*
 Querying all HTMLDivElements with card-panel class and
 for each element we are binding an action listener
 */
 document.querySelectorAll(".semestres").forEach(cardpanel => {
     cardpanel.addEventListener("click", function() {
-        console.log("clicked " + parseInt(cardpanel.id, 10) + " semestre");
+        //console.log("clicked " + parseInt(cardpanel.id, 10) + " semestre");
         switch (parseInt(cardpanel.id, 10)) {
             case 1:
-                viewORhide("primersemestre")
+                console.log("Show info for: " + cardpanel.id);
+                viewORhide("materiasprimero");
                 break;
             case 2:
-                viewORhide("primersemestre")
+                console.log("Show info for: " + cardpanel.id);
+                viewORhide("materiassegundo");
                 break;
             case 3:
-                viewORhide("primersemestre")
+                console.log("Show info for: " + cardpanel.id);
+                viewORhide("materiastercero");
                 break;
             case 4:
-                viewORhide("primersemestre")
+                console.log("Show info for: " + cardpanel.id);
+                viewORhide("materiascuarto");
                 break;
             case 5:
-                viewORhide("primersemestre")
+                console.log("Show info for: " + cardpanel.id);
+                viewORhide("materiasquinto");
                 break;
             case 6:
-                viewORhide("primersemestre")
+                console.log("Show info for: " + cardpanel.id);
+                viewORhide("materiassexto");
                 break;
             case 7:
-                viewORhide("primersemestre")
+                console.log("Show info for: " + cardpanel.id);
+                viewORhide("materiasseptimo");
                 break;
             case 8:
-                viewORhide("primersemestre")
+                console.log("Show info for: " + cardpanel.id);
+                viewORhide("materiasoctavo");
                 break;
             case 9:
-                viewORhide("primersemestre")
+                console.log("Show info for: " + cardpanel.id);
+                viewORhide("materiasnoveno");
                 break;
         }
     });
