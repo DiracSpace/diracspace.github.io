@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function() { M.AutoInit(); });
 
 // home function
 document.getElementById('Home').addEventListener("click", function() { window.location.href = "./index.html"; });
+document.getElementById('Home-sidebar').addEventListener("click", function() { window.location.href = "./index.html"; });
 
 /*
 Querying all HTMLDivElements with card-panel class and
