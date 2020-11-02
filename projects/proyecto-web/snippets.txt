@@ -1,0 +1,22 @@
+figma
+https://www.figma.com/file/4oyli5myCVNrmD7oQqtlyp/perfil-y-reticula-ISC?node-id=3%3A5
+
+repo
+https://github.com/DiracSpace/prog-web
+
+<div class="navbar-brand">
+                <img src="img/Tecnologico_de_el_Mante_logo.png" width="85" height="50" alt="">
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="material-icons">menu</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </div>
+            </div>
+
