@@ -1,0 +1,179 @@
+<!DOCTYPE html />
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Veterinaria</title>
+    <meta name="authors" content="aqui metemos los nombres del equipo" />
+    <meta name="keywords" content="aqui metemos palabras clave del contenido" />
+    <meta name="description" content="aqui metemos la descripción del proyecto" />
+    <!-- materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- google fonts & icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/4be3e68216.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="blue-grey lighten-5">
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <a class="brand-logo center"></a>
+                <!-- <a class="brand-logo center"><i class="fas fa-hand-holding-medical starter-logo"></i></a> -->
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            </div>
+        </nav>
+        <ul class="sidenav" id="mobile-demo">
+            <li>
+                <div class="user-view">
+                    <div class="background">
+                        <img src="img/pawbackground1.webp">
+                    </div>
+                    <a class="profile-pic-sidenav" href="#"><img class="circle" src="img/user-icon.webp"></a>
+                    <a href="#"><span class="white-text name">Veterinaria y Perruquería San Ángel</span></a>
+                </div>
+            </li>
+            <li>
+                <a href="#registeruser" class="waves-effect waves-light modal-trigger">
+                    Agregar cliente
+                </a>
+            </li>
+            <li>
+                <a href="#registerdate" class="waves-effect waves-light modal-trigger">
+                    Agrendar nueva cita
+                </a>
+            </li>
+            <li>
+                <a href="#patientcheckin" class="waves-effect waves-light modal-trigger">
+                    Generar ficha de ingreso
+                </a>
+            </li>
+        </ul>
+    </header>
+    <section class="agenda">
+        <div class="container-fluid">
+            <ul class="collection with-header">
+                <li class="collection-header">
+                    <h4>Citas de hoy</h4>
+                </li>
+                <li class="collection-item all-rounder">
+                    <div>
+                        <span href="#datedata" class="align-text-icon modal-trigger"><i class="material-icons">pets</i>
+                            paciente</span>
+                        <a href="#!" class="secondary-content"><i class="material-icons">delete_outline</i></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="container fixed-action-btn">
+            <a href="#registerdate" class="btn-floating btn-large right modal-trigger">
+                <i class="material-icons">add</i>
+            </a>
+        </div>
+    </section>
+    <!-- modal for displaying date data -->
+    <div id="datedata" class="modal bottom-sheet">
+        <div class="modal-content">
+            <h4>Información de cita</h4>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+    </div>
+    <!-- end -->
+    <!-- modal for adding new user -->
+    <div id="registeruser" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h5>Nuevo cliente</h5>
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field">
+                            <input id="first_name" type="text" class="validate">
+                            <label for="first_name">Propietario</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field">
+                            <input id="first_name" type="text" class="validate">
+                            <label for="first_name">Domicilio</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field">
+                            <input id="first_name" type="text" class="validate">
+                            <label for="first_name">Colonia</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancelar</a>
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Aceptar</a>
+        </div>
+    </div>
+    <!-- end  -->
+    <!-- modal for adding new date -->
+    <div id="registerdate" class="modal">
+        <div class="modal-content">
+            <h4>Nueva cita</h4>
+            <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+    </div>
+    <!-- end -->
+    <!-- modal for patient check-in -->
+    <div id="patientcheckin" class="modal">
+        <div class="modal-content">
+            <h4>Modal Header</h4>
+            <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+    </div>
+    <!-- end -->
+    <!-- internal javascript -->
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", () => { M.AutoInit(); });
+    </script>
+    <!-- external javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyCO63aJ-mGDsQyas-bqC6o5rVoEplTiljs",
+            authDomain: "pwa-tutorial-d0c6b.firebaseapp.com",
+            projectId: "pwa-tutorial-d0c6b",
+            storageBucket: "pwa-tutorial-d0c6b.appspot.com",
+            messagingSenderId: "398680300821",
+            appId: "1:398680300821:web:8d1e8e19a9f249cbfe9d1c",
+            measurementId: "G-YDQY0BHK0T"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+    <script type="text/javascript" src="js/ui.js"></script>
+    -->
+</body>
+
+</html>

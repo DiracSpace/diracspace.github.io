@@ -1,0 +1,23 @@
+/* .collapsible-header, .collapsible-body, .collapsible, ul.collapsible > li { box-shadow: none!important; } */
+nav { background-color: #7CACBC !important; }
+i.starter-logo { padding-top: 1rem !important; }
+ul.with-header { margin-top: 0 !important; }
+
+.name { 
+    font-size: 1.3rem !important;
+    margin-top: 0 !important;
+}
+
+.align-text-icon {
+    font-size:21px;
+    line-height:24px;
+}
+
+.material-icons {
+    display: inline-flex;
+    vertical-align: top;
+}
+
+.all-rounder {
+    padding: 5% 5% 5% 5% !important;
+}
